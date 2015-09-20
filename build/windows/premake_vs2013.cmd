@@ -1,0 +1,1 @@
+premake5.exe --file=premake_script.lua vs2013

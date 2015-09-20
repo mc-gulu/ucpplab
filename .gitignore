@@ -4,3 +4,4 @@
 /build/android/build.xml
 /build/android/*.properties
 /build/android/proguard-project.txt
+/build/windows/vs2013
