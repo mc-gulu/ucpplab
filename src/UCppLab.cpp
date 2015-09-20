@@ -1,12 +1,11 @@
 
-#include "McMain.h"
+#include "UCppLab.h"
 
-
-void McMain::OnStartup() 
+void UCppLab::OnStartup() 
 {
 	LOGI(__FUNCTION__);
 }
-void McMain::OnTouched() 
+void UCppLab::OnTouched() 
 {
 	LOGI(__FUNCTION__);
 }

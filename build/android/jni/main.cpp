@@ -28,7 +28,7 @@
 
 #include <functional>
 
-#include "McMain.h"
+#include "UCppLab.h"
 
 std::function<void()> GAppOnStartup;
 std::function<void()> GAppOnTouched;
@@ -244,8 +244,8 @@ void android_main(struct android_app* state) {
     // Make sure glue isn't stripped.
     app_dummy();
 
-    GAppOnStartup = &McMain::OnStartup;
-    GAppOnTouched = &McMain::OnTouched;
+    GAppOnStartup = &UCppLab::OnStartup;
+    GAppOnTouched = &UCppLab::OnTouched;
 
     memset(&engine, 0, sizeof(engine));
     state->userData = &engine;
