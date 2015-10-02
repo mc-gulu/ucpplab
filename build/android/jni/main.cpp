@@ -28,6 +28,7 @@
 
 #include <functional>
 
+#include "UCL_Logging.h"
 #include "UCppLab.h"
 
 std::function<void()> GAppOnStartup;
@@ -106,7 +107,7 @@ static int engine_init_display(struct engine* engine) {
     context = eglCreateContext(display, config, NULL, NULL);
 
     if (eglMakeCurrent(display, surface, surface, context) == EGL_FALSE) {
-        LOGW("Unable to eglMakeCurrent");
+        UCL_Log("Unable to eglMakeCurrent");
         return -1;
     }
 
