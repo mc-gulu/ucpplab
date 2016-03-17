@@ -5,7 +5,7 @@ APP_CPPFLAGS += -std=c++11 -W#pragma-messages
 
 
 # define this flag to use CLang 3.5 (llvm), otherwise gcc is used
-USE_CLANG := 1
+USE_CLANG := 0
 
 
 ifeq ($(USE_CLANG), 1)

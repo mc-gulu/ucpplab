@@ -15,8 +15,8 @@
 #include <android/log.h>
 #include <android_native_app_glue.h>
 
-#define LOGI(...) ((void)__android_log_print(ANDROID_LOG_INFO, "native-activity", "%s", __VA_ARGS__))
-#define LOGW(...) ((void)__android_log_print(ANDROID_LOG_WARN, "native-activity", "%s", __VA_ARGS__))
+#define LOGI(...) ((void)__android_log_print(ANDROID_LOG_INFO, "native-activity", "%s\n", __VA_ARGS__))
+#define LOGW(...) ((void)__android_log_print(ANDROID_LOG_WARN, "native-activity", "%s\n", __VA_ARGS__))
 
 #endif // UCL_Android
 
@@ -53,5 +53,6 @@ void UCL_Log(const char* format, ...)
     LOGI(buf);
 #else
     printf(buf);
+    printf("\n");
 #endif
 }
